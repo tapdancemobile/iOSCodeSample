@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		633F3C5A1767B9ED0029B26F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C591767B9ED0029B26F /* UIKit.framework */; };
+		633F3C5C1767B9ED0029B26F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C5B1767B9ED0029B26F /* Foundation.framework */; };
+		633F3C5E1767B9ED0029B26F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C5D1767B9ED0029B26F /* CoreGraphics.framework */; };
+		633F3C641767B9EE0029B26F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C621767B9EE0029B26F /* InfoPlist.strings */; };
+		633F3C661767B9EE0029B26F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C651767B9EE0029B26F /* main.m */; };
+		633F3C6A1767B9EF0029B26F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C691767B9EF0029B26F /* AppDelegate.m */; };
+		633F3C6E1767B9EF0029B26F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C6D1767B9EF0029B26F /* Default.png */; };
+		633F3C701767B9EF0029B26F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C6F1767B9EF0029B26F /* Default@2x.png */; };
+		633F3C721767B9EF0029B26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C711767B9EF0029B26F /* Default-568h@2x.png */; };
+		633F3C791767B9EF0029B26F /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C781767B9EF0029B26F /* Theme.m */; };
+		633F3C7C1767B9EF0029B26F /* RegularTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C7B1767B9EF0029B26F /* RegularTheme.m */; };
+		633F3C891767B9EF0029B26F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C871767B9EF0029B26F /* Localizable.strings */; };
+		633F3C8F1767B9EF0029B26F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C8E1767B9EF0029B26F /* BaseViewController.m */; };
+		633F3C931767B9EF0029B26F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C921767B9EF0029B26F /* RootViewController.m */; };
+		633F3C9B1767B9F00029B26F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C9A1767B9F00029B26F /* SenTestingKit.framework */; };
+		633F3C9C1767B9F00029B26F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C591767B9ED0029B26F /* UIKit.framework */; };
+		633F3C9D1767B9F00029B26F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C5B1767B9ED0029B26F /* Foundation.framework */; };
+		633F3CA51767B9F00029B26F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633F3CA31767B9F00029B26F /* InfoPlist.strings */; };
+		633F3CA81767B9F00029B26F /* NakedWifiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3CA71767B9F00029B26F /* NakedWifiTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		633F3C9E1767B9F00029B26F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633F3C4C1767B9EA0029B26F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633F3C541767B9EB0029B26F;
+			remoteInfo = NakedWifi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		633F3C551767B9ED0029B26F /* NakedWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NakedWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		633F3C591767B9ED0029B26F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		633F3C5B1767B9ED0029B26F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		633F3C5D1767B9ED0029B26F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		633F3C611767B9EE0029B26F /* NakedWifi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NakedWifi-Info.plist"; sourceTree = "<group>"; };
+		633F3C631767B9EE0029B26F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		633F3C651767B9EE0029B26F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		633F3C671767B9EE0029B26F /* NakedWifi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NakedWifi-Prefix.pch"; sourceTree = "<group>"; };
+		633F3C681767B9EE0029B26F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/AppDelegate.h; sourceTree = "<group>"; };
+		633F3C691767B9EF0029B26F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Source/AppDelegate.m; sourceTree = "<group>"; };
+		633F3C6D1767B9EF0029B26F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/OS/Default.png; sourceTree = "<group>"; };
+		633F3C6F1767B9EF0029B26F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/OS/Default@2x.png"; sourceTree = "<group>"; };
+		633F3C711767B9EF0029B26F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/OS/Default-568h@2x.png"; sourceTree = "<group>"; };
+		633F3C741767B9EF0029B26F /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Images/Sprites/.gitkeep; sourceTree = "<group>"; };
+		633F3C771767B9EF0029B26F /* Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Theme.h; path = Source/Theme/Theme.h; sourceTree = "<group>"; };
+		633F3C781767B9EF0029B26F /* Theme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Theme.m; path = Source/Theme/Theme.m; sourceTree = "<group>"; };
+		633F3C7A1767B9EF0029B26F /* RegularTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegularTheme.h; path = Source/Theme/RegularTheme.h; sourceTree = "<group>"; };
+		633F3C7B1767B9EF0029B26F /* RegularTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RegularTheme.m; path = Source/Theme/RegularTheme.m; sourceTree = "<group>"; };
+		633F3C7F1767B9EF0029B26F /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		633F3C811767B9EF0029B26F /* KIFTestScenario+TestScenario.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KIFTestScenario+TestScenario.h"; path = "NakedWifiIntegrations/KIFTestScenario+TestScenario.h"; sourceTree = SOURCE_ROOT; };
+		633F3C821767B9EF0029B26F /* KIFTestScenario+TestScenario.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "KIFTestScenario+TestScenario.m"; path = "NakedWifiIntegrations/KIFTestScenario+TestScenario.m"; sourceTree = SOURCE_ROOT; };
+		633F3C831767B9EF0029B26F /* KIFTestStep+Integrations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KIFTestStep+Integrations.h"; path = "NakedWifiIntegrations/KIFTestStep+Integrations.h"; sourceTree = SOURCE_ROOT; };
+		633F3C841767B9EF0029B26F /* KIFTestStep+Integrations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "KIFTestStep+Integrations.m"; path = "NakedWifiIntegrations/KIFTestStep+Integrations.m"; sourceTree = SOURCE_ROOT; };
+		633F3C861767B9EF0029B26F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		633F3C881767B9EF0029B26F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		633F3C8B1767B9EF0029B26F /* LocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocalizedStrings.h; path = Source/Localization/LocalizedStrings.h; sourceTree = "<group>"; };
+		633F3C8D1767B9EF0029B26F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Source/Base/BaseViewController.h; sourceTree = "<group>"; };
+		633F3C8E1767B9EF0029B26F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Source/Base/BaseViewController.m; sourceTree = "<group>"; };
+		633F3C911767B9EF0029B26F /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Source/Root/RootViewController.h; sourceTree = "<group>"; };
+		633F3C921767B9EF0029B26F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Source/Root/RootViewController.m; sourceTree = "<group>"; };
+		633F3C991767B9F00029B26F /* NakedWifiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NakedWifiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633F3C9A1767B9F00029B26F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		633F3CA21767B9F00029B26F /* NakedWifiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NakedWifiTests-Info.plist"; sourceTree = "<group>"; };
+		633F3CA41767B9F00029B26F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		633F3CA61767B9F00029B26F /* NakedWifiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NakedWifiTests.h; sourceTree = "<group>"; };
+		633F3CA71767B9F00029B26F /* NakedWifiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NakedWifiTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		633F3C521767B9EB0029B26F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633F3C5A1767B9ED0029B26F /* UIKit.framework in Frameworks */,
+				633F3C5C1767B9ED0029B26F /* Foundation.framework in Frameworks */,
+				633F3C5E1767B9ED0029B26F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633F3C951767B9F00029B26F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633F3C9B1767B9F00029B26F /* SenTestingKit.framework in Frameworks */,
+				633F3C9C1767B9F00029B26F /* UIKit.framework in Frameworks */,
+				633F3C9D1767B9F00029B26F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		633F3C4A1767B9E90029B26F = {
+			isa = PBXGroup;
+			children = (
+				633F3C5F1767B9ED0029B26F /* NakedWifi */,
+				633F3CA01767B9F00029B26F /* NakedWifiTests */,
+				633F3C581767B9ED0029B26F /* Frameworks */,
+				633F3C561767B9ED0029B26F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		633F3C561767B9ED0029B26F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C551767B9ED0029B26F /* NakedWifi.app */,
+				633F3C991767B9F00029B26F /* NakedWifiTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		633F3C581767B9ED0029B26F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C591767B9ED0029B26F /* UIKit.framework */,
+				633F3C5B1767B9ED0029B26F /* Foundation.framework */,
+				633F3C5D1767B9ED0029B26F /* CoreGraphics.framework */,
+				633F3C9A1767B9F00029B26F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		633F3C5F1767B9ED0029B26F /* NakedWifi */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C681767B9EE0029B26F /* AppDelegate.h */,
+				633F3C691767B9EF0029B26F /* AppDelegate.m */,
+				633F3C6B1767B9EF0029B26F /* Images */,
+				633F3C751767B9EF0029B26F /* Source */,
+				633F3C7D1767B9EF0029B26F /* -delete or reimport these groups- */,
+				633F3C601767B9EE0029B26F /* Supporting Files */,
+			);
+			path = NakedWifi;
+			sourceTree = "<group>";
+		};
+		633F3C601767B9EE0029B26F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C611767B9EE0029B26F /* NakedWifi-Info.plist */,
+				633F3C621767B9EE0029B26F /* InfoPlist.strings */,
+				633F3C651767B9EE0029B26F /* main.m */,
+				633F3C671767B9EE0029B26F /* NakedWifi-Prefix.pch */,
+				633F3C871767B9EF0029B26F /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		633F3C6B1767B9EF0029B26F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C6C1767B9EF0029B26F /* OS */,
+				633F3C731767B9EF0029B26F /* Sprites */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		633F3C6C1767B9EF0029B26F /* OS */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C6D1767B9EF0029B26F /* Default.png */,
+				633F3C6F1767B9EF0029B26F /* Default@2x.png */,
+				633F3C711767B9EF0029B26F /* Default-568h@2x.png */,
+			);
+			name = OS;
+			sourceTree = "<group>";
+		};
+		633F3C731767B9EF0029B26F /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C741767B9EF0029B26F /* .gitkeep */,
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+		633F3C751767B9EF0029B26F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C761767B9EF0029B26F /* Theme */,
+				633F3C8A1767B9EF0029B26F /* Localization */,
+				633F3C8C1767B9EF0029B26F /* Base */,
+				633F3C901767B9EF0029B26F /* Root */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		633F3C761767B9EF0029B26F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C771767B9EF0029B26F /* Theme.h */,
+				633F3C781767B9EF0029B26F /* Theme.m */,
+				633F3C7A1767B9EF0029B26F /* RegularTheme.h */,
+				633F3C7B1767B9EF0029B26F /* RegularTheme.m */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		633F3C7D1767B9EF0029B26F /* -delete or reimport these groups- */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C7E1767B9EF0029B26F /* CocoaPods */,
+				633F3C801767B9EF0029B26F /* KIF Integration Tests */,
+				633F3C851767B9EF0029B26F /* git */,
+			);
+			name = "-delete or reimport these groups-";
+			sourceTree = "<group>";
+		};
+		633F3C7E1767B9EF0029B26F /* CocoaPods */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C7F1767B9EF0029B26F /* Podfile */,
+			);
+			name = CocoaPods;
+			sourceTree = "<group>";
+		};
+		633F3C801767B9EF0029B26F /* KIF Integration Tests */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C811767B9EF0029B26F /* KIFTestScenario+TestScenario.h */,
+				633F3C821767B9EF0029B26F /* KIFTestScenario+TestScenario.m */,
+				633F3C831767B9EF0029B26F /* KIFTestStep+Integrations.h */,
+				633F3C841767B9EF0029B26F /* KIFTestStep+Integrations.m */,
+			);
+			name = "KIF Integration Tests";
+			sourceTree = "<group>";
+		};
+		633F3C851767B9EF0029B26F /* git */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C861767B9EF0029B26F /* .gitignore */,
+			);
+			name = git;
+			sourceTree = "<group>";
+		};
+		633F3C8A1767B9EF0029B26F /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C8B1767B9EF0029B26F /* LocalizedStrings.h */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		633F3C8C1767B9EF0029B26F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C8D1767B9EF0029B26F /* BaseViewController.h */,
+				633F3C8E1767B9EF0029B26F /* BaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		633F3C901767B9EF0029B26F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				633F3C911767B9EF0029B26F /* RootViewController.h */,
+				633F3C921767B9EF0029B26F /* RootViewController.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		633F3CA01767B9F00029B26F /* NakedWifiTests */ = {
+			isa = PBXGroup;
+			children = (
+				633F3CA61767B9F00029B26F /* NakedWifiTests.h */,
+				633F3CA71767B9F00029B26F /* NakedWifiTests.m */,
+				633F3CA11767B9F00029B26F /* Supporting Files */,
+			);
+			path = NakedWifiTests;
+			sourceTree = "<group>";
+		};
+		633F3CA11767B9F00029B26F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				633F3CA21767B9F00029B26F /* NakedWifiTests-Info.plist */,
+				633F3CA31767B9F00029B26F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		633F3C541767B9EB0029B26F /* NakedWifi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633F3CAB1767B9F00029B26F /* Build configuration list for PBXNativeTarget "NakedWifi" */;
+			buildPhases = (
+				633F3C511767B9EB0029B26F /* Sources */,
+				633F3C521767B9EB0029B26F /* Frameworks */,
+				633F3C531767B9EB0029B26F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NakedWifi;
+			productName = NakedWifi;
+			productReference = 633F3C551767B9ED0029B26F /* NakedWifi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		633F3C981767B9F00029B26F /* NakedWifiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633F3CAE1767B9F00029B26F /* Build configuration list for PBXNativeTarget "NakedWifiTests" */;
+			buildPhases = (
+				633F3C941767B9F00029B26F /* Sources */,
+				633F3C951767B9F00029B26F /* Frameworks */,
+				633F3C961767B9F00029B26F /* Resources */,
+				633F3C971767B9F00029B26F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633F3C9F1767B9F00029B26F /* PBXTargetDependency */,
+			);
+			name = NakedWifiTests;
+			productName = NakedWifiTests;
+			productReference = 633F3C991767B9F00029B26F /* NakedWifiTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		633F3C4C1767B9EA0029B26F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Naked Apartments";
+			};
+			buildConfigurationList = 633F3C4F1767B9EA0029B26F /* Build configuration list for PBXProject "NakedWifi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 633F3C4A1767B9E90029B26F;
+			productRefGroup = 633F3C561767B9ED0029B26F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				633F3C541767B9EB0029B26F /* NakedWifi */,
+				633F3C981767B9F00029B26F /* NakedWifiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		633F3C531767B9EB0029B26F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633F3C641767B9EE0029B26F /* InfoPlist.strings in Resources */,
+				633F3C6E1767B9EF0029B26F /* Default.png in Resources */,
+				633F3C701767B9EF0029B26F /* Default@2x.png in Resources */,
+				633F3C721767B9EF0029B26F /* Default-568h@2x.png in Resources */,
+				633F3C891767B9EF0029B26F /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633F3C961767B9F00029B26F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633F3CA51767B9F00029B26F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		633F3C971767B9F00029B26F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		633F3C511767B9EB0029B26F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633F3C661767B9EE0029B26F /* main.m in Sources */,
+				633F3C6A1767B9EF0029B26F /* AppDelegate.m in Sources */,
+				633F3C791767B9EF0029B26F /* Theme.m in Sources */,
+				633F3C7C1767B9EF0029B26F /* RegularTheme.m in Sources */,
+				633F3C8F1767B9EF0029B26F /* BaseViewController.m in Sources */,
+				633F3C931767B9EF0029B26F /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633F3C941767B9F00029B26F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633F3CA81767B9F00029B26F /* NakedWifiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		633F3C9F1767B9F00029B26F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633F3C541767B9EB0029B26F /* NakedWifi */;
+			targetProxy = 633F3C9E1767B9F00029B26F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		633F3C621767B9EE0029B26F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633F3C631767B9EE0029B26F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		633F3C871767B9EF0029B26F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633F3C881767B9EF0029B26F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		633F3CA31767B9F00029B26F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633F3CA41767B9F00029B26F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		633F3CA91767B9F00029B26F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		633F3CAA1767B9F00029B26F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		633F3CAC1767B9F00029B26F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
+				INFOPLIST_FILE = "NakedWifi/NakedWifi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		633F3CAD1767B9F00029B26F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
+				INFOPLIST_FILE = "NakedWifi/NakedWifi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		633F3CAF1767B9F00029B26F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NakedWifi.app/NakedWifi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
+				INFOPLIST_FILE = "NakedWifiTests/NakedWifiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		633F3CB01767B9F00029B26F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NakedWifi.app/NakedWifi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
+				INFOPLIST_FILE = "NakedWifiTests/NakedWifiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		633F3C4F1767B9EA0029B26F /* Build configuration list for PBXProject "NakedWifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633F3CA91767B9F00029B26F /* Debug */,
+				633F3CAA1767B9F00029B26F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633F3CAB1767B9F00029B26F /* Build configuration list for PBXNativeTarget "NakedWifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633F3CAC1767B9F00029B26F /* Debug */,
+				633F3CAD1767B9F00029B26F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		633F3CAE1767B9F00029B26F /* Build configuration list for PBXNativeTarget "NakedWifiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633F3CAF1767B9F00029B26F /* Debug */,
+				633F3CB01767B9F00029B26F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 633F3C4C1767B9EA0029B26F /* Project object */;
+}

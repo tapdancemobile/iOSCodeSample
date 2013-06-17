@@ -1,4 +1,15 @@
-//  Created by ttefabbob on 6/11/13.
+//
+//  Naked Wifi
+//
+//  Copyright (C) 2013 Naked Apartments
+//  All rights reserved.
+//
+//  Developed for Naked Apartments by:
+//  Mark Mathis
+//  http://tadamobile.com
+//  markmathis@gmail.com
+//
+
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

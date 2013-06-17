@@ -1,4 +1,15 @@
-//  Created by ttefabbob on 6/11/13.
+//
+//  Naked Wifi
+//
+//  Copyright (C) 2013 Naked Apartments
+//  All rights reserved.
+//
+//  Developed for Naked Apartments by:
+//  Mark Mathis
+//  http://tadamobile.com
+//  markmathis@gmail.com
+//
+
 #import "AppDelegate.h"
 
 #import "Theme.h"
@@ -6,6 +17,7 @@
 #import "RegularTheme.h"
 
 #import "RootViewController.h"
+#import "WifiVC.h"
 
 @implementation AppDelegate
 
@@ -13,13 +25,18 @@
 {
 
     [Theme setCurrentTheme:[[RegularTheme alloc] init]];
-    			
-    RootViewController *rootViewController = [[RootViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    
+    WifiVC *wifiVC = [[WifiVC alloc] init];
+    
+    UINavigationController *wifiNavigationController = [[UINavigationController alloc] initWithRootViewController:wifiVC];
+    wifiNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"WIFI" image:[UIImage imageNamed:@"179-notepad"] tag:0];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[wifiNavigationController];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = navigationController;
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
 
     #if RUN_KIF_TESTS

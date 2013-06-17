@@ -7,25 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B59F415DB145CF9141B6C6 /* libPods-NakedWifi Integrations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38677775CF624097A7F17703 /* libPods-NakedWifi Integrations.a */; };
 		633F3C5A1767B9ED0029B26F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C591767B9ED0029B26F /* UIKit.framework */; };
 		633F3C5C1767B9ED0029B26F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C5B1767B9ED0029B26F /* Foundation.framework */; };
 		633F3C5E1767B9ED0029B26F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C5D1767B9ED0029B26F /* CoreGraphics.framework */; };
 		633F3C641767B9EE0029B26F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C621767B9EE0029B26F /* InfoPlist.strings */; };
 		633F3C661767B9EE0029B26F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C651767B9EE0029B26F /* main.m */; };
-		633F3C6A1767B9EF0029B26F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C691767B9EF0029B26F /* AppDelegate.m */; };
 		633F3C6E1767B9EF0029B26F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C6D1767B9EF0029B26F /* Default.png */; };
 		633F3C701767B9EF0029B26F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C6F1767B9EF0029B26F /* Default@2x.png */; };
 		633F3C721767B9EF0029B26F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C711767B9EF0029B26F /* Default-568h@2x.png */; };
-		633F3C791767B9EF0029B26F /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C781767B9EF0029B26F /* Theme.m */; };
-		633F3C7C1767B9EF0029B26F /* RegularTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C7B1767B9EF0029B26F /* RegularTheme.m */; };
 		633F3C891767B9EF0029B26F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C871767B9EF0029B26F /* Localizable.strings */; };
-		633F3C8F1767B9EF0029B26F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C8E1767B9EF0029B26F /* BaseViewController.m */; };
-		633F3C931767B9EF0029B26F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C921767B9EF0029B26F /* RootViewController.m */; };
 		633F3C9B1767B9F00029B26F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C9A1767B9F00029B26F /* SenTestingKit.framework */; };
 		633F3C9C1767B9F00029B26F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C591767B9ED0029B26F /* UIKit.framework */; };
 		633F3C9D1767B9F00029B26F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C5B1767B9ED0029B26F /* Foundation.framework */; };
 		633F3CA51767B9F00029B26F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633F3CA31767B9F00029B26F /* InfoPlist.strings */; };
 		633F3CA81767B9F00029B26F /* NakedWifiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3CA71767B9F00029B26F /* NakedWifiTests.m */; };
+		6362662C1767C1D600FB2C25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6362661E1767C1D600FB2C25 /* AppDelegate.m */; };
+		6362662D1767C1D600FB2C25 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266211767C1D600FB2C25 /* BaseViewController.m */; };
+		6362662E1767C1D600FB2C25 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266261767C1D600FB2C25 /* RootViewController.m */; };
+		6362662F1767C1D600FB2C25 /* RegularTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266291767C1D600FB2C25 /* RegularTheme.m */; };
+		636266301767C1D600FB2C25 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6362662B1767C1D600FB2C25 /* Theme.m */; };
+		636266331767C25B00FB2C25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633F3C651767B9EE0029B26F /* main.m */; };
+		636266341767C25B00FB2C25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6362661E1767C1D600FB2C25 /* AppDelegate.m */; };
+		636266351767C25B00FB2C25 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266211767C1D600FB2C25 /* BaseViewController.m */; };
+		636266361767C25B00FB2C25 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266261767C1D600FB2C25 /* RootViewController.m */; };
+		636266371767C25B00FB2C25 /* RegularTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266291767C1D600FB2C25 /* RegularTheme.m */; };
+		636266381767C25B00FB2C25 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6362662B1767C1D600FB2C25 /* Theme.m */; };
+		6362663A1767C25B00FB2C25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C591767B9ED0029B26F /* UIKit.framework */; };
+		6362663B1767C25B00FB2C25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C5B1767B9ED0029B26F /* Foundation.framework */; };
+		6362663C1767C25B00FB2C25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633F3C5D1767B9ED0029B26F /* CoreGraphics.framework */; };
+		6362663E1767C25B00FB2C25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C621767B9EE0029B26F /* InfoPlist.strings */; };
+		6362663F1767C25B00FB2C25 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C6D1767B9EF0029B26F /* Default.png */; };
+		636266401767C25B00FB2C25 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C6F1767B9EF0029B26F /* Default@2x.png */; };
+		636266411767C25B00FB2C25 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C711767B9EF0029B26F /* Default-568h@2x.png */; };
+		636266421767C25B00FB2C25 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633F3C871767B9EF0029B26F /* Localizable.strings */; };
+		636266CA176A3AA200FB2C25 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266C9176A3AA200FB2C25 /* CFNetwork.framework */; };
+		636266CC176A3AA900FB2C25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266CB176A3AA900FB2C25 /* CoreLocation.framework */; };
+		636266CE176A3AB600FB2C25 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266CD176A3AB600FB2C25 /* MapKit.framework */; };
+		636266D0176A3ABF00FB2C25 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266CF176A3ABF00FB2C25 /* MobileCoreServices.framework */; };
+		636266D2176A3AC700FB2C25 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266D1176A3AC700FB2C25 /* Security.framework */; };
+		636266D4176A3AD500FB2C25 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266D3176A3AD500FB2C25 /* SystemConfiguration.framework */; };
+		636266D5176A3B3300FB2C25 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266C9176A3AA200FB2C25 /* CFNetwork.framework */; };
+		636266D6176A3B3800FB2C25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266CB176A3AA900FB2C25 /* CoreLocation.framework */; };
+		636266D7176A3B3F00FB2C25 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266CD176A3AB600FB2C25 /* MapKit.framework */; };
+		636266D8176A3B4600FB2C25 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266CF176A3ABF00FB2C25 /* MobileCoreServices.framework */; };
+		636266D9176A3B4C00FB2C25 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266D1176A3AC700FB2C25 /* Security.framework */; };
+		636266DA176A3B5200FB2C25 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636266D3176A3AD500FB2C25 /* SystemConfiguration.framework */; };
+		636266FE176B5D2300FB2C25 /* WifiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266FC176B5D2300FB2C25 /* WifiVC.m */; };
+		636266FF176B5D2300FB2C25 /* WifiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266FC176B5D2300FB2C25 /* WifiVC.m */; };
+		63626700176B5D2300FB2C25 /* WifiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636266FD176B5D2300FB2C25 /* WifiVC.xib */; };
+		63626701176B5D2300FB2C25 /* WifiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636266FD176B5D2300FB2C25 /* WifiVC.xib */; };
+		639230B3176F57F900FFD47E /* SODADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923076176F57F900FFD47E /* SODADocument.m */; };
+		639230B4176F57F900FFD47E /* SODADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923076176F57F900FFD47E /* SODADocument.m */; };
+		639230B5176F57F900FFD47E /* SODAGeoBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923078176F57F900FFD47E /* SODAGeoBox.m */; };
+		639230B6176F57F900FFD47E /* SODAGeoBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923078176F57F900FFD47E /* SODAGeoBox.m */; };
+		639230B7176F57F900FFD47E /* SODALocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392307A176F57F900FFD47E /* SODALocation.m */; };
+		639230B8176F57F900FFD47E /* SODALocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392307A176F57F900FFD47E /* SODALocation.m */; };
+		639230B9176F57F900FFD47E /* SODAPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392307C176F57F900FFD47E /* SODAPhone.m */; };
+		639230BA176F57F900FFD47E /* SODAPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392307C176F57F900FFD47E /* SODAPhone.m */; };
+		639230BB176F57F900FFD47E /* SODAUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392307E176F57F900FFD47E /* SODAUrl.m */; };
+		639230BC176F57F900FFD47E /* SODAUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392307E176F57F900FFD47E /* SODAUrl.m */; };
+		639230BD176F57F900FFD47E /* SODAExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923083176F57F900FFD47E /* SODAExpression.m */; };
+		639230BE176F57F900FFD47E /* SODAExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923083176F57F900FFD47E /* SODAExpression.m */; };
+		639230BF176F57F900FFD47E /* SODAGroupByClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923085176F57F900FFD47E /* SODAGroupByClause.m */; };
+		639230C0176F57F900FFD47E /* SODAGroupByClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923085176F57F900FFD47E /* SODAGroupByClause.m */; };
+		639230C1176F57F900FFD47E /* SODAImmutableClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923087176F57F900FFD47E /* SODAImmutableClause.m */; };
+		639230C2176F57F900FFD47E /* SODAImmutableClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923087176F57F900FFD47E /* SODAImmutableClause.m */; };
+		639230C3176F57F900FFD47E /* SODALimitClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923089176F57F900FFD47E /* SODALimitClause.m */; };
+		639230C4176F57F900FFD47E /* SODALimitClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923089176F57F900FFD47E /* SODALimitClause.m */; };
+		639230C5176F57F900FFD47E /* SODAOffsetClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392308B176F57F900FFD47E /* SODAOffsetClause.m */; };
+		639230C6176F57F900FFD47E /* SODAOffsetClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392308B176F57F900FFD47E /* SODAOffsetClause.m */; };
+		639230C7176F57F900FFD47E /* SODAOrderByClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392308D176F57F900FFD47E /* SODAOrderByClause.m */; };
+		639230C8176F57F900FFD47E /* SODAOrderByClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392308D176F57F900FFD47E /* SODAOrderByClause.m */; };
+		639230C9176F57F900FFD47E /* SODASelectClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392308F176F57F900FFD47E /* SODASelectClause.m */; };
+		639230CA176F57F900FFD47E /* SODASelectClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392308F176F57F900FFD47E /* SODASelectClause.m */; };
+		639230CB176F57F900FFD47E /* SODAWhereClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923091176F57F900FFD47E /* SODAWhereClause.m */; };
+		639230CC176F57F900FFD47E /* SODAWhereClause.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923091176F57F900FFD47E /* SODAWhereClause.m */; };
+		639230CD176F57F900FFD47E /* SODAQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923093176F57F900FFD47E /* SODAQuery.m */; };
+		639230CE176F57F900FFD47E /* SODAQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923093176F57F900FFD47E /* SODAQuery.m */; };
+		639230CF176F57F900FFD47E /* SODAExpressionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923096176F57F900FFD47E /* SODAExpressionUtils.m */; };
+		639230D0176F57F900FFD47E /* SODAExpressionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923096176F57F900FFD47E /* SODAExpressionUtils.m */; };
+		639230D1176F57F900FFD47E /* SODANSArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923098176F57F900FFD47E /* SODANSArrayUtils.m */; };
+		639230D2176F57F900FFD47E /* SODANSArrayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923098176F57F900FFD47E /* SODANSArrayUtils.m */; };
+		639230D3176F57F900FFD47E /* SODACallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392309A176F57F900FFD47E /* SODACallback.m */; };
+		639230D4176F57F900FFD47E /* SODACallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392309A176F57F900FFD47E /* SODACallback.m */; };
+		639230D5176F57F900FFD47E /* SODAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392309E176F57F900FFD47E /* SODAConsumer.m */; };
+		639230D6176F57F900FFD47E /* SODAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392309E176F57F900FFD47E /* SODAConsumer.m */; };
+		639230D7176F57F900FFD47E /* SODADataTypesMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230A0176F57F900FFD47E /* SODADataTypesMapper.m */; };
+		639230D8176F57F900FFD47E /* SODADataTypesMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230A0176F57F900FFD47E /* SODADataTypesMapper.m */; };
+		639230D9176F57F900FFD47E /* SODAError.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230A2176F57F900FFD47E /* SODAError.m */; };
+		639230DA176F57F900FFD47E /* SODAError.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230A2176F57F900FFD47E /* SODAError.m */; };
+		639230DB176F57F900FFD47E /* SODAResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230A5176F57F900FFD47E /* SODAResponse.m */; };
+		639230DC176F57F900FFD47E /* SODAResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230A5176F57F900FFD47E /* SODAResponse.m */; };
+		639230DD176F57F900FFD47E /* icn-default-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 639230A8176F57F900FFD47E /* icn-default-marker.png */; };
+		639230DE176F57F900FFD47E /* icn-default-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 639230A8176F57F900FFD47E /* icn-default-marker.png */; };
+		639230DF176F57F900FFD47E /* icn-default-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639230A9176F57F900FFD47E /* icn-default-marker@2x.png */; };
+		639230E0176F57F900FFD47E /* icn-default-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639230A9176F57F900FFD47E /* icn-default-marker@2x.png */; };
+		639230E1176F57F900FFD47E /* SODAMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230AB176F57F900FFD47E /* SODAMapAnnotation.m */; };
+		639230E2176F57F900FFD47E /* SODAMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230AB176F57F900FFD47E /* SODAMapAnnotation.m */; };
+		639230E3176F57F900FFD47E /* SODAMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230AD176F57F900FFD47E /* SODAMapAnnotationView.m */; };
+		639230E4176F57F900FFD47E /* SODAMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230AD176F57F900FFD47E /* SODAMapAnnotationView.m */; };
+		639230E5176F57F900FFD47E /* SODAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230AF176F57F900FFD47E /* SODAMapViewController.m */; };
+		639230E6176F57F900FFD47E /* SODAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230AF176F57F900FFD47E /* SODAMapViewController.m */; };
+		639230E7176F57F900FFD47E /* SODATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230B2176F57F900FFD47E /* SODATableViewController.m */; };
+		639230E8176F57F900FFD47E /* SODATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230B2176F57F900FFD47E /* SODATableViewController.m */; };
+		639230EB176F5B5D00FFD47E /* SODAWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230EA176F5B5D00FFD47E /* SODAWifi.m */; };
+		639230EC176F5B5D00FFD47E /* SODAWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 639230EA176F5B5D00FFD47E /* SODAWifi.m */; };
+		639230EE176F6B6400FFD47E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639230ED176F6B6400FFD47E /* AddressBook.framework */; };
+		F71F40390EA2437796EFDC07 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99504BE4694546528C65EE00 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +128,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38677775CF624097A7F17703 /* libPods-NakedWifi Integrations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NakedWifi Integrations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633F3C551767B9ED0029B26F /* NakedWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NakedWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633F3C591767B9ED0029B26F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		633F3C5B1767B9ED0029B26F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,34 +137,101 @@
 		633F3C631767B9EE0029B26F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		633F3C651767B9EE0029B26F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		633F3C671767B9EE0029B26F /* NakedWifi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NakedWifi-Prefix.pch"; sourceTree = "<group>"; };
-		633F3C681767B9EE0029B26F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/AppDelegate.h; sourceTree = "<group>"; };
-		633F3C691767B9EF0029B26F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Source/AppDelegate.m; sourceTree = "<group>"; };
 		633F3C6D1767B9EF0029B26F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/OS/Default.png; sourceTree = "<group>"; };
 		633F3C6F1767B9EF0029B26F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/OS/Default@2x.png"; sourceTree = "<group>"; };
 		633F3C711767B9EF0029B26F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/OS/Default-568h@2x.png"; sourceTree = "<group>"; };
 		633F3C741767B9EF0029B26F /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Images/Sprites/.gitkeep; sourceTree = "<group>"; };
-		633F3C771767B9EF0029B26F /* Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Theme.h; path = Source/Theme/Theme.h; sourceTree = "<group>"; };
-		633F3C781767B9EF0029B26F /* Theme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Theme.m; path = Source/Theme/Theme.m; sourceTree = "<group>"; };
-		633F3C7A1767B9EF0029B26F /* RegularTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegularTheme.h; path = Source/Theme/RegularTheme.h; sourceTree = "<group>"; };
-		633F3C7B1767B9EF0029B26F /* RegularTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RegularTheme.m; path = Source/Theme/RegularTheme.m; sourceTree = "<group>"; };
-		633F3C7F1767B9EF0029B26F /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
-		633F3C811767B9EF0029B26F /* KIFTestScenario+TestScenario.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KIFTestScenario+TestScenario.h"; path = "NakedWifiIntegrations/KIFTestScenario+TestScenario.h"; sourceTree = SOURCE_ROOT; };
-		633F3C821767B9EF0029B26F /* KIFTestScenario+TestScenario.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "KIFTestScenario+TestScenario.m"; path = "NakedWifiIntegrations/KIFTestScenario+TestScenario.m"; sourceTree = SOURCE_ROOT; };
-		633F3C831767B9EF0029B26F /* KIFTestStep+Integrations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KIFTestStep+Integrations.h"; path = "NakedWifiIntegrations/KIFTestStep+Integrations.h"; sourceTree = SOURCE_ROOT; };
-		633F3C841767B9EF0029B26F /* KIFTestStep+Integrations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "KIFTestStep+Integrations.m"; path = "NakedWifiIntegrations/KIFTestStep+Integrations.m"; sourceTree = SOURCE_ROOT; };
-		633F3C861767B9EF0029B26F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		633F3C881767B9EF0029B26F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		633F3C8B1767B9EF0029B26F /* LocalizedStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocalizedStrings.h; path = Source/Localization/LocalizedStrings.h; sourceTree = "<group>"; };
-		633F3C8D1767B9EF0029B26F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Source/Base/BaseViewController.h; sourceTree = "<group>"; };
-		633F3C8E1767B9EF0029B26F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Source/Base/BaseViewController.m; sourceTree = "<group>"; };
-		633F3C911767B9EF0029B26F /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Source/Root/RootViewController.h; sourceTree = "<group>"; };
-		633F3C921767B9EF0029B26F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Source/Root/RootViewController.m; sourceTree = "<group>"; };
 		633F3C991767B9F00029B26F /* NakedWifiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NakedWifiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		633F3C9A1767B9F00029B26F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		633F3CA21767B9F00029B26F /* NakedWifiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NakedWifiTests-Info.plist"; sourceTree = "<group>"; };
 		633F3CA41767B9F00029B26F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		633F3CA61767B9F00029B26F /* NakedWifiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NakedWifiTests.h; sourceTree = "<group>"; };
 		633F3CA71767B9F00029B26F /* NakedWifiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NakedWifiTests.m; sourceTree = "<group>"; };
+		6362661D1767C1D600FB2C25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6362661E1767C1D600FB2C25 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		636266201767C1D600FB2C25 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		636266211767C1D600FB2C25 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		636266231767C1D600FB2C25 /* LocalizedStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizedStrings.h; sourceTree = "<group>"; };
+		636266251767C1D600FB2C25 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		636266261767C1D600FB2C25 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		636266281767C1D600FB2C25 /* RegularTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularTheme.h; sourceTree = "<group>"; };
+		636266291767C1D600FB2C25 /* RegularTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularTheme.m; sourceTree = "<group>"; };
+		6362662A1767C1D600FB2C25 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		6362662B1767C1D600FB2C25 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		636266461767C25B00FB2C25 /* NakedWifi copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NakedWifi copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63626648176A358A00FB2C25 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		636266C9176A3AA200FB2C25 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		636266CB176A3AA900FB2C25 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		636266CD176A3AB600FB2C25 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		636266CF176A3ABF00FB2C25 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		636266D1176A3AC700FB2C25 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		636266D3176A3AD500FB2C25 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		636266FB176B5D2300FB2C25 /* WifiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiVC.h; sourceTree = "<group>"; };
+		636266FC176B5D2300FB2C25 /* WifiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiVC.m; sourceTree = "<group>"; };
+		636266FD176B5D2300FB2C25 /* WifiVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WifiVC.xib; sourceTree = "<group>"; };
+		63923075176F57F900FFD47E /* SODADocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODADocument.h; sourceTree = "<group>"; };
+		63923076176F57F900FFD47E /* SODADocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODADocument.m; sourceTree = "<group>"; };
+		63923077176F57F900FFD47E /* SODAGeoBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAGeoBox.h; sourceTree = "<group>"; };
+		63923078176F57F900FFD47E /* SODAGeoBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAGeoBox.m; sourceTree = "<group>"; };
+		63923079176F57F900FFD47E /* SODALocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODALocation.h; sourceTree = "<group>"; };
+		6392307A176F57F900FFD47E /* SODALocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODALocation.m; sourceTree = "<group>"; };
+		6392307B176F57F900FFD47E /* SODAPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAPhone.h; sourceTree = "<group>"; };
+		6392307C176F57F900FFD47E /* SODAPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAPhone.m; sourceTree = "<group>"; };
+		6392307D176F57F900FFD47E /* SODAUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAUrl.h; sourceTree = "<group>"; };
+		6392307E176F57F900FFD47E /* SODAUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAUrl.m; sourceTree = "<group>"; };
+		63923081176F57F900FFD47E /* SODABuildCapable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODABuildCapable.h; sourceTree = "<group>"; };
+		63923082176F57F900FFD47E /* SODAExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAExpression.h; sourceTree = "<group>"; };
+		63923083176F57F900FFD47E /* SODAExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAExpression.m; sourceTree = "<group>"; };
+		63923084176F57F900FFD47E /* SODAGroupByClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAGroupByClause.h; sourceTree = "<group>"; };
+		63923085176F57F900FFD47E /* SODAGroupByClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAGroupByClause.m; sourceTree = "<group>"; };
+		63923086176F57F900FFD47E /* SODAImmutableClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAImmutableClause.h; sourceTree = "<group>"; };
+		63923087176F57F900FFD47E /* SODAImmutableClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAImmutableClause.m; sourceTree = "<group>"; };
+		63923088176F57F900FFD47E /* SODALimitClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODALimitClause.h; sourceTree = "<group>"; };
+		63923089176F57F900FFD47E /* SODALimitClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODALimitClause.m; sourceTree = "<group>"; };
+		6392308A176F57F900FFD47E /* SODAOffsetClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAOffsetClause.h; sourceTree = "<group>"; };
+		6392308B176F57F900FFD47E /* SODAOffsetClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAOffsetClause.m; sourceTree = "<group>"; };
+		6392308C176F57F900FFD47E /* SODAOrderByClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAOrderByClause.h; sourceTree = "<group>"; };
+		6392308D176F57F900FFD47E /* SODAOrderByClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAOrderByClause.m; sourceTree = "<group>"; };
+		6392308E176F57F900FFD47E /* SODASelectClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODASelectClause.h; sourceTree = "<group>"; };
+		6392308F176F57F900FFD47E /* SODASelectClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODASelectClause.m; sourceTree = "<group>"; };
+		63923090176F57F900FFD47E /* SODAWhereClause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAWhereClause.h; sourceTree = "<group>"; };
+		63923091176F57F900FFD47E /* SODAWhereClause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAWhereClause.m; sourceTree = "<group>"; };
+		63923092176F57F900FFD47E /* SODAQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAQuery.h; sourceTree = "<group>"; };
+		63923093176F57F900FFD47E /* SODAQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAQuery.m; sourceTree = "<group>"; };
+		63923095176F57F900FFD47E /* SODAExpressionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAExpressionUtils.h; sourceTree = "<group>"; };
+		63923096176F57F900FFD47E /* SODAExpressionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAExpressionUtils.m; sourceTree = "<group>"; };
+		63923097176F57F900FFD47E /* SODANSArrayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODANSArrayUtils.h; sourceTree = "<group>"; };
+		63923098176F57F900FFD47E /* SODANSArrayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODANSArrayUtils.m; sourceTree = "<group>"; };
+		63923099176F57F900FFD47E /* SODACallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODACallback.h; sourceTree = "<group>"; };
+		6392309A176F57F900FFD47E /* SODACallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODACallback.m; sourceTree = "<group>"; };
+		6392309B176F57F900FFD47E /* SODAClient-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SODAClient-Prefix.pch"; sourceTree = "<group>"; };
+		6392309C176F57F900FFD47E /* SODAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAClient.h; sourceTree = "<group>"; };
+		6392309D176F57F900FFD47E /* SODAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAConsumer.h; sourceTree = "<group>"; };
+		6392309E176F57F900FFD47E /* SODAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAConsumer.m; sourceTree = "<group>"; };
+		6392309F176F57F900FFD47E /* SODADataTypesMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODADataTypesMapper.h; sourceTree = "<group>"; };
+		639230A0176F57F900FFD47E /* SODADataTypesMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODADataTypesMapper.m; sourceTree = "<group>"; };
+		639230A1176F57F900FFD47E /* SODAError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAError.h; sourceTree = "<group>"; };
+		639230A2176F57F900FFD47E /* SODAError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAError.m; sourceTree = "<group>"; };
+		639230A3176F57F900FFD47E /* SODAPropertyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAPropertyMapping.h; sourceTree = "<group>"; };
+		639230A4176F57F900FFD47E /* SODAResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAResponse.h; sourceTree = "<group>"; };
+		639230A5176F57F900FFD47E /* SODAResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAResponse.m; sourceTree = "<group>"; };
+		639230A8176F57F900FFD47E /* icn-default-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-default-marker.png"; sourceTree = "<group>"; };
+		639230A9176F57F900FFD47E /* icn-default-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn-default-marker@2x.png"; sourceTree = "<group>"; };
+		639230AA176F57F900FFD47E /* SODAMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAMapAnnotation.h; sourceTree = "<group>"; };
+		639230AB176F57F900FFD47E /* SODAMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAMapAnnotation.m; sourceTree = "<group>"; };
+		639230AC176F57F900FFD47E /* SODAMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAMapAnnotationView.h; sourceTree = "<group>"; };
+		639230AD176F57F900FFD47E /* SODAMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAMapAnnotationView.m; sourceTree = "<group>"; };
+		639230AE176F57F900FFD47E /* SODAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAMapViewController.h; sourceTree = "<group>"; };
+		639230AF176F57F900FFD47E /* SODAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAMapViewController.m; sourceTree = "<group>"; };
+		639230B1176F57F900FFD47E /* SODATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODATableViewController.h; sourceTree = "<group>"; };
+		639230B2176F57F900FFD47E /* SODATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODATableViewController.m; sourceTree = "<group>"; };
+		639230E9176F5B5D00FFD47E /* SODAWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAWifi.h; sourceTree = "<group>"; };
+		639230EA176F5B5D00FFD47E /* SODAWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODAWifi.m; sourceTree = "<group>"; };
+		639230ED176F6B6400FFD47E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		8AA91FD80A754FE99454A27C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		99504BE4694546528C65EE00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3B76BEDA3C4BCEB1420CA9 /* Pods-NakedWifi Integrations.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NakedWifi Integrations.xcconfig"; path = "Pods/Pods-NakedWifi Integrations.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +239,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639230EE176F6B6400FFD47E /* AddressBook.framework in Frameworks */,
+				636266D4176A3AD500FB2C25 /* SystemConfiguration.framework in Frameworks */,
+				636266D2176A3AC700FB2C25 /* Security.framework in Frameworks */,
+				636266D0176A3ABF00FB2C25 /* MobileCoreServices.framework in Frameworks */,
+				636266CE176A3AB600FB2C25 /* MapKit.framework in Frameworks */,
+				636266CC176A3AA900FB2C25 /* CoreLocation.framework in Frameworks */,
+				636266CA176A3AA200FB2C25 /* CFNetwork.framework in Frameworks */,
 				633F3C5A1767B9ED0029B26F /* UIKit.framework in Frameworks */,
 				633F3C5C1767B9ED0029B26F /* Foundation.framework in Frameworks */,
 				633F3C5E1767B9ED0029B26F /* CoreGraphics.framework in Frameworks */,
+				F71F40390EA2437796EFDC07 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,16 +263,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		636266391767C25B00FB2C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636266DA176A3B5200FB2C25 /* SystemConfiguration.framework in Frameworks */,
+				636266D9176A3B4C00FB2C25 /* Security.framework in Frameworks */,
+				636266D8176A3B4600FB2C25 /* MobileCoreServices.framework in Frameworks */,
+				636266D7176A3B3F00FB2C25 /* MapKit.framework in Frameworks */,
+				636266D6176A3B3800FB2C25 /* CoreLocation.framework in Frameworks */,
+				636266D5176A3B3300FB2C25 /* CFNetwork.framework in Frameworks */,
+				6362663A1767C25B00FB2C25 /* UIKit.framework in Frameworks */,
+				6362663B1767C25B00FB2C25 /* Foundation.framework in Frameworks */,
+				6362663C1767C25B00FB2C25 /* CoreGraphics.framework in Frameworks */,
+				00B59F415DB145CF9141B6C6 /* libPods-NakedWifi Integrations.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		633F3C4A1767B9E90029B26F = {
 			isa = PBXGroup;
 			children = (
+				639230ED176F6B6400FFD47E /* AddressBook.framework */,
 				633F3C5F1767B9ED0029B26F /* NakedWifi */,
 				633F3CA01767B9F00029B26F /* NakedWifiTests */,
 				633F3C581767B9ED0029B26F /* Frameworks */,
 				633F3C561767B9ED0029B26F /* Products */,
+				63626648176A358A00FB2C25 /* Podfile */,
+				8AA91FD80A754FE99454A27C /* Pods.xcconfig */,
+				BA3B76BEDA3C4BCEB1420CA9 /* Pods-NakedWifi Integrations.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +302,7 @@
 			children = (
 				633F3C551767B9ED0029B26F /* NakedWifi.app */,
 				633F3C991767B9F00029B26F /* NakedWifiTests.octest */,
+				636266461767C25B00FB2C25 /* NakedWifi copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,10 +310,18 @@
 		633F3C581767B9ED0029B26F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				636266D3176A3AD500FB2C25 /* SystemConfiguration.framework */,
+				636266D1176A3AC700FB2C25 /* Security.framework */,
+				636266CF176A3ABF00FB2C25 /* MobileCoreServices.framework */,
+				636266CD176A3AB600FB2C25 /* MapKit.framework */,
+				636266CB176A3AA900FB2C25 /* CoreLocation.framework */,
+				636266C9176A3AA200FB2C25 /* CFNetwork.framework */,
 				633F3C591767B9ED0029B26F /* UIKit.framework */,
 				633F3C5B1767B9ED0029B26F /* Foundation.framework */,
 				633F3C5D1767B9ED0029B26F /* CoreGraphics.framework */,
 				633F3C9A1767B9F00029B26F /* SenTestingKit.framework */,
+				99504BE4694546528C65EE00 /* libPods.a */,
+				38677775CF624097A7F17703 /* libPods-NakedWifi Integrations.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,11 +329,10 @@
 		633F3C5F1767B9ED0029B26F /* NakedWifi */ = {
 			isa = PBXGroup;
 			children = (
-				633F3C681767B9EE0029B26F /* AppDelegate.h */,
-				633F3C691767B9EF0029B26F /* AppDelegate.m */,
+				63923073176F57F900FFD47E /* SODAClient */,
+				636266F0176B56CC00FB2C25 /* XIB */,
+				6362661C1767C1D600FB2C25 /* Source */,
 				633F3C6B1767B9EF0029B26F /* Images */,
-				633F3C751767B9EF0029B26F /* Source */,
-				633F3C7D1767B9EF0029B26F /* -delete or reimport these groups- */,
 				633F3C601767B9EE0029B26F /* Supporting Files */,
 			);
 			path = NakedWifi;
@@ -183,91 +377,6 @@
 			name = Sprites;
 			sourceTree = "<group>";
 		};
-		633F3C751767B9EF0029B26F /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C761767B9EF0029B26F /* Theme */,
-				633F3C8A1767B9EF0029B26F /* Localization */,
-				633F3C8C1767B9EF0029B26F /* Base */,
-				633F3C901767B9EF0029B26F /* Root */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		633F3C761767B9EF0029B26F /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C771767B9EF0029B26F /* Theme.h */,
-				633F3C781767B9EF0029B26F /* Theme.m */,
-				633F3C7A1767B9EF0029B26F /* RegularTheme.h */,
-				633F3C7B1767B9EF0029B26F /* RegularTheme.m */,
-			);
-			name = Theme;
-			sourceTree = "<group>";
-		};
-		633F3C7D1767B9EF0029B26F /* -delete or reimport these groups- */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C7E1767B9EF0029B26F /* CocoaPods */,
-				633F3C801767B9EF0029B26F /* KIF Integration Tests */,
-				633F3C851767B9EF0029B26F /* git */,
-			);
-			name = "-delete or reimport these groups-";
-			sourceTree = "<group>";
-		};
-		633F3C7E1767B9EF0029B26F /* CocoaPods */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C7F1767B9EF0029B26F /* Podfile */,
-			);
-			name = CocoaPods;
-			sourceTree = "<group>";
-		};
-		633F3C801767B9EF0029B26F /* KIF Integration Tests */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C811767B9EF0029B26F /* KIFTestScenario+TestScenario.h */,
-				633F3C821767B9EF0029B26F /* KIFTestScenario+TestScenario.m */,
-				633F3C831767B9EF0029B26F /* KIFTestStep+Integrations.h */,
-				633F3C841767B9EF0029B26F /* KIFTestStep+Integrations.m */,
-			);
-			name = "KIF Integration Tests";
-			sourceTree = "<group>";
-		};
-		633F3C851767B9EF0029B26F /* git */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C861767B9EF0029B26F /* .gitignore */,
-			);
-			name = git;
-			sourceTree = "<group>";
-		};
-		633F3C8A1767B9EF0029B26F /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C8B1767B9EF0029B26F /* LocalizedStrings.h */,
-			);
-			name = Localization;
-			sourceTree = "<group>";
-		};
-		633F3C8C1767B9EF0029B26F /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C8D1767B9EF0029B26F /* BaseViewController.h */,
-				633F3C8E1767B9EF0029B26F /* BaseViewController.m */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		633F3C901767B9EF0029B26F /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				633F3C911767B9EF0029B26F /* RootViewController.h */,
-				633F3C921767B9EF0029B26F /* RootViewController.m */,
-			);
-			name = Root;
-			sourceTree = "<group>";
-		};
 		633F3CA01767B9F00029B26F /* NakedWifiTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +396,203 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6362661C1767C1D600FB2C25 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6362661D1767C1D600FB2C25 /* AppDelegate.h */,
+				6362661E1767C1D600FB2C25 /* AppDelegate.m */,
+				636266E5176A3DC400FB2C25 /* Model */,
+				636266DC176A3D5700FB2C25 /* Controller */,
+				6362661F1767C1D600FB2C25 /* Base */,
+				636266221767C1D600FB2C25 /* Localization */,
+				636266241767C1D600FB2C25 /* Root */,
+				636266271767C1D600FB2C25 /* Theme */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6362661F1767C1D600FB2C25 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				636266201767C1D600FB2C25 /* BaseViewController.h */,
+				636266211767C1D600FB2C25 /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		636266221767C1D600FB2C25 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				636266231767C1D600FB2C25 /* LocalizedStrings.h */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		636266241767C1D600FB2C25 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				636266251767C1D600FB2C25 /* RootViewController.h */,
+				636266261767C1D600FB2C25 /* RootViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		636266271767C1D600FB2C25 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				636266281767C1D600FB2C25 /* RegularTheme.h */,
+				636266291767C1D600FB2C25 /* RegularTheme.m */,
+				6362662A1767C1D600FB2C25 /* Theme.h */,
+				6362662B1767C1D600FB2C25 /* Theme.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		636266DC176A3D5700FB2C25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				636266FB176B5D2300FB2C25 /* WifiVC.h */,
+				636266FC176B5D2300FB2C25 /* WifiVC.m */,
+				636266FD176B5D2300FB2C25 /* WifiVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		636266E5176A3DC400FB2C25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				639230E9176F5B5D00FFD47E /* SODAWifi.h */,
+				639230EA176F5B5D00FFD47E /* SODAWifi.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		636266F0176B56CC00FB2C25 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		63923073176F57F900FFD47E /* SODAClient */ = {
+			isa = PBXGroup;
+			children = (
+				63923074176F57F900FFD47E /* DataTypes */,
+				63923099176F57F900FFD47E /* SODACallback.h */,
+				6392309A176F57F900FFD47E /* SODACallback.m */,
+				6392309B176F57F900FFD47E /* SODAClient-Prefix.pch */,
+				6392309C176F57F900FFD47E /* SODAClient.h */,
+				6392309D176F57F900FFD47E /* SODAConsumer.h */,
+				6392309E176F57F900FFD47E /* SODAConsumer.m */,
+				6392309F176F57F900FFD47E /* SODADataTypesMapper.h */,
+				639230A0176F57F900FFD47E /* SODADataTypesMapper.m */,
+				639230A1176F57F900FFD47E /* SODAError.h */,
+				639230A2176F57F900FFD47E /* SODAError.m */,
+				639230A3176F57F900FFD47E /* SODAPropertyMapping.h */,
+				639230A4176F57F900FFD47E /* SODAResponse.h */,
+				639230A5176F57F900FFD47E /* SODAResponse.m */,
+				639230A6176F57F900FFD47E /* UI */,
+			);
+			path = SODAClient;
+			sourceTree = "<group>";
+		};
+		63923074176F57F900FFD47E /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				63923075176F57F900FFD47E /* SODADocument.h */,
+				63923076176F57F900FFD47E /* SODADocument.m */,
+				63923077176F57F900FFD47E /* SODAGeoBox.h */,
+				63923078176F57F900FFD47E /* SODAGeoBox.m */,
+				63923079176F57F900FFD47E /* SODALocation.h */,
+				6392307A176F57F900FFD47E /* SODALocation.m */,
+				6392307B176F57F900FFD47E /* SODAPhone.h */,
+				6392307C176F57F900FFD47E /* SODAPhone.m */,
+				6392307D176F57F900FFD47E /* SODAUrl.h */,
+				6392307E176F57F900FFD47E /* SODAUrl.m */,
+				6392307F176F57F900FFD47E /* SOQL */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		6392307F176F57F900FFD47E /* SOQL */ = {
+			isa = PBXGroup;
+			children = (
+				63923080176F57F900FFD47E /* Clauses */,
+				63923092176F57F900FFD47E /* SODAQuery.h */,
+				63923093176F57F900FFD47E /* SODAQuery.m */,
+				63923094176F57F900FFD47E /* Utils */,
+			);
+			path = SOQL;
+			sourceTree = "<group>";
+		};
+		63923080176F57F900FFD47E /* Clauses */ = {
+			isa = PBXGroup;
+			children = (
+				63923081176F57F900FFD47E /* SODABuildCapable.h */,
+				63923082176F57F900FFD47E /* SODAExpression.h */,
+				63923083176F57F900FFD47E /* SODAExpression.m */,
+				63923084176F57F900FFD47E /* SODAGroupByClause.h */,
+				63923085176F57F900FFD47E /* SODAGroupByClause.m */,
+				63923086176F57F900FFD47E /* SODAImmutableClause.h */,
+				63923087176F57F900FFD47E /* SODAImmutableClause.m */,
+				63923088176F57F900FFD47E /* SODALimitClause.h */,
+				63923089176F57F900FFD47E /* SODALimitClause.m */,
+				6392308A176F57F900FFD47E /* SODAOffsetClause.h */,
+				6392308B176F57F900FFD47E /* SODAOffsetClause.m */,
+				6392308C176F57F900FFD47E /* SODAOrderByClause.h */,
+				6392308D176F57F900FFD47E /* SODAOrderByClause.m */,
+				6392308E176F57F900FFD47E /* SODASelectClause.h */,
+				6392308F176F57F900FFD47E /* SODASelectClause.m */,
+				63923090176F57F900FFD47E /* SODAWhereClause.h */,
+				63923091176F57F900FFD47E /* SODAWhereClause.m */,
+			);
+			path = Clauses;
+			sourceTree = "<group>";
+		};
+		63923094176F57F900FFD47E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				63923095176F57F900FFD47E /* SODAExpressionUtils.h */,
+				63923096176F57F900FFD47E /* SODAExpressionUtils.m */,
+				63923097176F57F900FFD47E /* SODANSArrayUtils.h */,
+				63923098176F57F900FFD47E /* SODANSArrayUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		639230A6176F57F900FFD47E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				639230A7176F57F900FFD47E /* Map */,
+				639230B0176F57F900FFD47E /* Table */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		639230A7176F57F900FFD47E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				639230A8176F57F900FFD47E /* icn-default-marker.png */,
+				639230A9176F57F900FFD47E /* icn-default-marker@2x.png */,
+				639230AA176F57F900FFD47E /* SODAMapAnnotation.h */,
+				639230AB176F57F900FFD47E /* SODAMapAnnotation.m */,
+				639230AC176F57F900FFD47E /* SODAMapAnnotationView.h */,
+				639230AD176F57F900FFD47E /* SODAMapAnnotationView.m */,
+				639230AE176F57F900FFD47E /* SODAMapViewController.h */,
+				639230AF176F57F900FFD47E /* SODAMapViewController.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		639230B0176F57F900FFD47E /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				639230B1176F57F900FFD47E /* SODATableViewController.h */,
+				639230B2176F57F900FFD47E /* SODATableViewController.m */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,9 +600,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 633F3CAB1767B9F00029B26F /* Build configuration list for PBXNativeTarget "NakedWifi" */;
 			buildPhases = (
+				3A0BE80355F745158B4B0E4C /* Check Pods Manifest.lock */,
 				633F3C511767B9EB0029B26F /* Sources */,
 				633F3C521767B9EB0029B26F /* Frameworks */,
 				633F3C531767B9EB0029B26F /* Resources */,
+				895B11FA212745CD89CA7CCA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +634,25 @@
 			productReference = 633F3C991767B9F00029B26F /* NakedWifiTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		636266311767C25B00FB2C25 /* NakedWifi Integrations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636266431767C25B00FB2C25 /* Build configuration list for PBXNativeTarget "NakedWifi Integrations" */;
+			buildPhases = (
+				D697C5A7F0464E96AC0E7B0E /* Check Pods Manifest.lock */,
+				636266321767C25B00FB2C25 /* Sources */,
+				636266391767C25B00FB2C25 /* Frameworks */,
+				6362663D1767C25B00FB2C25 /* Resources */,
+				7A3BAD20C7F04F65B4F9708B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NakedWifi Integrations";
+			productName = NakedWifi;
+			productReference = 636266461767C25B00FB2C25 /* NakedWifi copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -348,6 +675,7 @@
 			projectRoot = "";
 			targets = (
 				633F3C541767B9EB0029B26F /* NakedWifi */,
+				636266311767C25B00FB2C25 /* NakedWifi Integrations */,
 				633F3C981767B9F00029B26F /* NakedWifiTests */,
 			);
 		};
@@ -363,6 +691,9 @@
 				633F3C701767B9EF0029B26F /* Default@2x.png in Resources */,
 				633F3C721767B9EF0029B26F /* Default-568h@2x.png in Resources */,
 				633F3C891767B9EF0029B26F /* Localizable.strings in Resources */,
+				63626700176B5D2300FB2C25 /* WifiVC.xib in Resources */,
+				639230DD176F57F900FFD47E /* icn-default-marker.png in Resources */,
+				639230DF176F57F900FFD47E /* icn-default-marker@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +705,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6362663D1767C25B00FB2C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6362663E1767C25B00FB2C25 /* InfoPlist.strings in Resources */,
+				6362663F1767C25B00FB2C25 /* Default.png in Resources */,
+				636266401767C25B00FB2C25 /* Default@2x.png in Resources */,
+				636266411767C25B00FB2C25 /* Default-568h@2x.png in Resources */,
+				636266421767C25B00FB2C25 /* Localizable.strings in Resources */,
+				63626701176B5D2300FB2C25 /* WifiVC.xib in Resources */,
+				639230DE176F57F900FFD47E /* icn-default-marker.png in Resources */,
+				639230E0176F57F900FFD47E /* icn-default-marker@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A0BE80355F745158B4B0E4C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
 		633F3C971767B9F00029B26F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +750,48 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		7A3BAD20C7F04F65B4F9708B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-NakedWifi Integrations-resources.sh\"\n";
+		};
+		895B11FA212745CD89CA7CCA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		D697C5A7F0464E96AC0E7B0E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -398,11 +800,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				633F3C661767B9EE0029B26F /* main.m in Sources */,
-				633F3C6A1767B9EF0029B26F /* AppDelegate.m in Sources */,
-				633F3C791767B9EF0029B26F /* Theme.m in Sources */,
-				633F3C7C1767B9EF0029B26F /* RegularTheme.m in Sources */,
-				633F3C8F1767B9EF0029B26F /* BaseViewController.m in Sources */,
-				633F3C931767B9EF0029B26F /* RootViewController.m in Sources */,
+				6362662C1767C1D600FB2C25 /* AppDelegate.m in Sources */,
+				6362662D1767C1D600FB2C25 /* BaseViewController.m in Sources */,
+				6362662E1767C1D600FB2C25 /* RootViewController.m in Sources */,
+				6362662F1767C1D600FB2C25 /* RegularTheme.m in Sources */,
+				636266301767C1D600FB2C25 /* Theme.m in Sources */,
+				636266FE176B5D2300FB2C25 /* WifiVC.m in Sources */,
+				639230B3176F57F900FFD47E /* SODADocument.m in Sources */,
+				639230B5176F57F900FFD47E /* SODAGeoBox.m in Sources */,
+				639230B7176F57F900FFD47E /* SODALocation.m in Sources */,
+				639230B9176F57F900FFD47E /* SODAPhone.m in Sources */,
+				639230BB176F57F900FFD47E /* SODAUrl.m in Sources */,
+				639230BD176F57F900FFD47E /* SODAExpression.m in Sources */,
+				639230BF176F57F900FFD47E /* SODAGroupByClause.m in Sources */,
+				639230C1176F57F900FFD47E /* SODAImmutableClause.m in Sources */,
+				639230C3176F57F900FFD47E /* SODALimitClause.m in Sources */,
+				639230C5176F57F900FFD47E /* SODAOffsetClause.m in Sources */,
+				639230C7176F57F900FFD47E /* SODAOrderByClause.m in Sources */,
+				639230C9176F57F900FFD47E /* SODASelectClause.m in Sources */,
+				639230CB176F57F900FFD47E /* SODAWhereClause.m in Sources */,
+				639230CD176F57F900FFD47E /* SODAQuery.m in Sources */,
+				639230CF176F57F900FFD47E /* SODAExpressionUtils.m in Sources */,
+				639230D1176F57F900FFD47E /* SODANSArrayUtils.m in Sources */,
+				639230D3176F57F900FFD47E /* SODACallback.m in Sources */,
+				639230D5176F57F900FFD47E /* SODAConsumer.m in Sources */,
+				639230D7176F57F900FFD47E /* SODADataTypesMapper.m in Sources */,
+				639230D9176F57F900FFD47E /* SODAError.m in Sources */,
+				639230DB176F57F900FFD47E /* SODAResponse.m in Sources */,
+				639230E1176F57F900FFD47E /* SODAMapAnnotation.m in Sources */,
+				639230E3176F57F900FFD47E /* SODAMapAnnotationView.m in Sources */,
+				639230E5176F57F900FFD47E /* SODAMapViewController.m in Sources */,
+				639230E7176F57F900FFD47E /* SODATableViewController.m in Sources */,
+				639230EB176F5B5D00FFD47E /* SODAWifi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +840,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				633F3CA81767B9F00029B26F /* NakedWifiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636266321767C25B00FB2C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636266331767C25B00FB2C25 /* main.m in Sources */,
+				636266341767C25B00FB2C25 /* AppDelegate.m in Sources */,
+				636266351767C25B00FB2C25 /* BaseViewController.m in Sources */,
+				636266361767C25B00FB2C25 /* RootViewController.m in Sources */,
+				636266371767C25B00FB2C25 /* RegularTheme.m in Sources */,
+				636266381767C25B00FB2C25 /* Theme.m in Sources */,
+				636266FF176B5D2300FB2C25 /* WifiVC.m in Sources */,
+				639230B4176F57F900FFD47E /* SODADocument.m in Sources */,
+				639230B6176F57F900FFD47E /* SODAGeoBox.m in Sources */,
+				639230B8176F57F900FFD47E /* SODALocation.m in Sources */,
+				639230BA176F57F900FFD47E /* SODAPhone.m in Sources */,
+				639230BC176F57F900FFD47E /* SODAUrl.m in Sources */,
+				639230BE176F57F900FFD47E /* SODAExpression.m in Sources */,
+				639230C0176F57F900FFD47E /* SODAGroupByClause.m in Sources */,
+				639230C2176F57F900FFD47E /* SODAImmutableClause.m in Sources */,
+				639230C4176F57F900FFD47E /* SODALimitClause.m in Sources */,
+				639230C6176F57F900FFD47E /* SODAOffsetClause.m in Sources */,
+				639230C8176F57F900FFD47E /* SODAOrderByClause.m in Sources */,
+				639230CA176F57F900FFD47E /* SODASelectClause.m in Sources */,
+				639230CC176F57F900FFD47E /* SODAWhereClause.m in Sources */,
+				639230CE176F57F900FFD47E /* SODAQuery.m in Sources */,
+				639230D0176F57F900FFD47E /* SODAExpressionUtils.m in Sources */,
+				639230D2176F57F900FFD47E /* SODANSArrayUtils.m in Sources */,
+				639230D4176F57F900FFD47E /* SODACallback.m in Sources */,
+				639230D6176F57F900FFD47E /* SODAConsumer.m in Sources */,
+				639230D8176F57F900FFD47E /* SODADataTypesMapper.m in Sources */,
+				639230DA176F57F900FFD47E /* SODAError.m in Sources */,
+				639230DC176F57F900FFD47E /* SODAResponse.m in Sources */,
+				639230E2176F57F900FFD47E /* SODAMapAnnotation.m in Sources */,
+				639230E4176F57F900FFD47E /* SODAMapAnnotationView.m in Sources */,
+				639230E6176F57F900FFD47E /* SODAMapViewController.m in Sources */,
+				639230E8176F57F900FFD47E /* SODATableViewController.m in Sources */,
+				639230EC176F5B5D00FFD47E /* SODAWifi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +979,7 @@
 		};
 		633F3CAC1767B9F00029B26F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA91FD80A754FE99454A27C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
@@ -521,6 +991,7 @@
 		};
 		633F3CAD1767B9F00029B26F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA91FD80A754FE99454A27C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
@@ -564,6 +1035,30 @@
 			};
 			name = Release;
 		};
+		636266441767C25B00FB2C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3B76BEDA3C4BCEB1420CA9 /* Pods-NakedWifi Integrations.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
+				INFOPLIST_FILE = "NakedWifi/NakedWifi-Info.plist";
+				PRODUCT_NAME = "NakedWifi copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		636266451767C25B00FB2C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3B76BEDA3C4BCEB1420CA9 /* Pods-NakedWifi Integrations.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
+				INFOPLIST_FILE = "NakedWifi/NakedWifi-Info.plist";
+				PRODUCT_NAME = "NakedWifi copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +1078,7 @@
 				633F3CAD1767B9F00029B26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		633F3CAE1767B9F00029B26F /* Build configuration list for PBXNativeTarget "NakedWifiTests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +1087,16 @@
 				633F3CB01767B9F00029B26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636266431767C25B00FB2C25 /* Build configuration list for PBXNativeTarget "NakedWifi Integrations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636266441767C25B00FB2C25 /* Debug */,
+				636266451767C25B00FB2C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

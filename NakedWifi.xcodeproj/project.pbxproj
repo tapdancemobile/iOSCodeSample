@@ -57,6 +57,16 @@
 		636266FF176B5D2300FB2C25 /* WifiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 636266FC176B5D2300FB2C25 /* WifiVC.m */; };
 		63626700176B5D2300FB2C25 /* WifiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636266FD176B5D2300FB2C25 /* WifiVC.xib */; };
 		63626701176B5D2300FB2C25 /* WifiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636266FD176B5D2300FB2C25 /* WifiVC.xib */; };
+		63819F501770D2F40041A67F /* WifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63819F4F1770D2F40041A67F /* WifiCell.xib */; };
+		63819F511770D2F40041A67F /* WifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63819F4F1770D2F40041A67F /* WifiCell.xib */; };
+		63819F541770D8670041A67F /* WifiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63819F531770D8670041A67F /* WifiCell.m */; };
+		63819F551770D8670041A67F /* WifiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63819F531770D8670041A67F /* WifiCell.m */; };
+		63819F5B1770F8330041A67F /* free.png in Resources */ = {isa = PBXBuildFile; fileRef = 63819F591770F8330041A67F /* free.png */; };
+		63819F5C1770F8330041A67F /* free.png in Resources */ = {isa = PBXBuildFile; fileRef = 63819F591770F8330041A67F /* free.png */; };
+		63819F5D1770F8330041A67F /* cost.png in Resources */ = {isa = PBXBuildFile; fileRef = 63819F5A1770F8330041A67F /* cost.png */; };
+		63819F5E1770F8330041A67F /* cost.png in Resources */ = {isa = PBXBuildFile; fileRef = 63819F5A1770F8330041A67F /* cost.png */; };
+		63819F601770FAFA0041A67F /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 63819F5F1770FAFA0041A67F /* wifi.png */; };
+		63819F611770FAFA0041A67F /* wifi.png in Resources */ = {isa = PBXBuildFile; fileRef = 63819F5F1770FAFA0041A67F /* wifi.png */; };
 		639230B3176F57F900FFD47E /* SODADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923076176F57F900FFD47E /* SODADocument.m */; };
 		639230B4176F57F900FFD47E /* SODADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923076176F57F900FFD47E /* SODADocument.m */; };
 		639230B5176F57F900FFD47E /* SODAGeoBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 63923078176F57F900FFD47E /* SODAGeoBox.m */; };
@@ -170,6 +180,12 @@
 		636266FB176B5D2300FB2C25 /* WifiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiVC.h; sourceTree = "<group>"; };
 		636266FC176B5D2300FB2C25 /* WifiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiVC.m; sourceTree = "<group>"; };
 		636266FD176B5D2300FB2C25 /* WifiVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WifiVC.xib; sourceTree = "<group>"; };
+		63819F4F1770D2F40041A67F /* WifiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WifiCell.xib; sourceTree = "<group>"; };
+		63819F521770D8670041A67F /* WifiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiCell.h; sourceTree = "<group>"; };
+		63819F531770D8670041A67F /* WifiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiCell.m; sourceTree = "<group>"; };
+		63819F591770F8330041A67F /* free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = free.png; sourceTree = "<group>"; };
+		63819F5A1770F8330041A67F /* cost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cost.png; sourceTree = "<group>"; };
+		63819F5F1770FAFA0041A67F /* wifi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wifi.png; sourceTree = "<group>"; };
 		63923075176F57F900FFD47E /* SODADocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODADocument.h; sourceTree = "<group>"; };
 		63923076176F57F900FFD47E /* SODADocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODADocument.m; sourceTree = "<group>"; };
 		63923077176F57F900FFD47E /* SODAGeoBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODAGeoBox.h; sourceTree = "<group>"; };
@@ -329,8 +345,8 @@
 		633F3C5F1767B9ED0029B26F /* NakedWifi */ = {
 			isa = PBXGroup;
 			children = (
+				63819F4E1770D2F40041A67F /* XIB */,
 				63923073176F57F900FFD47E /* SODAClient */,
-				636266F0176B56CC00FB2C25 /* XIB */,
 				6362661C1767C1D600FB2C25 /* Source */,
 				633F3C6B1767B9EF0029B26F /* Images */,
 				633F3C601767B9EE0029B26F /* Supporting Files */,
@@ -372,6 +388,9 @@
 		633F3C731767B9EF0029B26F /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				63819F5F1770FAFA0041A67F /* wifi.png */,
+				63819F591770F8330041A67F /* free.png */,
+				63819F5A1770F8330041A67F /* cost.png */,
 				633F3C741767B9EF0029B26F /* .gitkeep */,
 			);
 			name = Sprites;
@@ -467,9 +486,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		636266F0176B56CC00FB2C25 /* XIB */ = {
+		63819F4E1770D2F40041A67F /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				63819F4F1770D2F40041A67F /* WifiCell.xib */,
+				63819F521770D8670041A67F /* WifiCell.h */,
+				63819F531770D8670041A67F /* WifiCell.m */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -694,6 +716,10 @@
 				63626700176B5D2300FB2C25 /* WifiVC.xib in Resources */,
 				639230DD176F57F900FFD47E /* icn-default-marker.png in Resources */,
 				639230DF176F57F900FFD47E /* icn-default-marker@2x.png in Resources */,
+				63819F501770D2F40041A67F /* WifiCell.xib in Resources */,
+				63819F5B1770F8330041A67F /* free.png in Resources */,
+				63819F5D1770F8330041A67F /* cost.png in Resources */,
+				63819F601770FAFA0041A67F /* wifi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +743,10 @@
 				63626701176B5D2300FB2C25 /* WifiVC.xib in Resources */,
 				639230DE176F57F900FFD47E /* icn-default-marker.png in Resources */,
 				639230E0176F57F900FFD47E /* icn-default-marker@2x.png in Resources */,
+				63819F511770D2F40041A67F /* WifiCell.xib in Resources */,
+				63819F5C1770F8330041A67F /* free.png in Resources */,
+				63819F5E1770F8330041A67F /* cost.png in Resources */,
+				63819F611770FAFA0041A67F /* wifi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,6 +862,7 @@
 				639230E5176F57F900FFD47E /* SODAMapViewController.m in Sources */,
 				639230E7176F57F900FFD47E /* SODATableViewController.m in Sources */,
 				639230EB176F5B5D00FFD47E /* SODAWifi.m in Sources */,
+				63819F541770D8670041A67F /* WifiCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,6 +911,7 @@
 				639230E6176F57F900FFD47E /* SODAMapViewController.m in Sources */,
 				639230E8176F57F900FFD47E /* SODATableViewController.m in Sources */,
 				639230EC176F5B5D00FFD47E /* SODAWifi.m in Sources */,
+				63819F551770D8670041A67F /* WifiCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,6 +1013,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AA91FD80A754FE99454A27C /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
 				INFOPLIST_FILE = "NakedWifi/NakedWifi-Info.plist";
@@ -993,10 +1027,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AA91FD80A754FE99454A27C /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NakedWifi/NakedWifi-Prefix.pch";
 				INFOPLIST_FILE = "NakedWifi/NakedWifi-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

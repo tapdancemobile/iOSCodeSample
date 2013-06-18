@@ -13,6 +13,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 #import <AddressBook/AddressBook.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #import "WifiVC.h"
 #import "SODAConsumer.h"
@@ -22,18 +23,23 @@
 #import "SODACallback.h"
 #import "SODAResponse.h"
 #import "SODAWifi.h"
+#import "WifiCell.h"
 
 @implementation WifiVC {
+    NSArray *wifiSpots;
+    NSMutableDictionary *wifiDict;
     SODAQuery *query;
     SODAResponse *lastResponse;
     CLLocationManager *locationManager;
     CLGeocoder *geocoder;
     CLPlacemark *placemark;
+    MKCoordinateRegion currentUserRegion;
 }
 
 @synthesize mapView = _mapView;
 @synthesize consumer = _consumer;
 @synthesize tableView = _tableView;
+@synthesize selectedRow = _selectedRow;
 
 
 #pragma mark - Initialization Methods
@@ -41,16 +47,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height*1/3)];
-        [self.mapView setShowsUserLocation:YES];
-        [self.mapView setDelegate:self];
-        [self.view addSubview:self.mapView];
         
-        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height*1/3, self.view.frame.size.width, self.view.frame.size.height*2/3)];
-        [self.tableView setDelegate:self];
-        [self.view addSubview:self.tableView];
-        
-        self.navigationItem.title = @"Naked Wifi";        
         self.consumer = [SODAConsumer consumerWithDomain:@"data.cityofnewyork.us" token:@" iSWQfAfRYcxK6TC6kiJc9UDqy"];
 
     }
@@ -63,8 +60,35 @@
     [super viewWillAppear:animated];
     
     locationManager = [[CLLocationManager alloc] init];
-    [self getCurrentLocation:0];
     geocoder = [[CLGeocoder alloc] init];
+    wifiDict = [[NSMutableDictionary alloc] init];
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    
+    [super viewDidAppear:animated];
+    
+    self.mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height*35/60)];
+    [self.mapView setShowsUserLocation:YES];
+    [self.mapView setDelegate:self];
+    [self.view addSubview:self.mapView];
+    
+    UIView *spacer = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height*35/60, self.view.frame.size.width, self.view.frame.size.height*1/60)];
+    spacer.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:spacer];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height*36/60, self.view.frame.size.width, self.view.frame.size.height*24/60)];
+    [self.tableView setDelegate:self];
+    [self.tableView setDataSource:self];
+    [self.view addSubview:self.tableView];
+    
+    self.navigationItem.title = @"Naked Wifi";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(getCurrentLocation:)];
+    
+    //get initial location
+    [self getCurrentLocation:0];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -75,6 +99,8 @@
     UIAlertView *errorAlert = [[UIAlertView alloc]
                                initWithTitle:@"Error" message:@"Failed to Get Your Location - defaulting to NYC" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
+    
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
@@ -91,8 +117,6 @@
         if (error == nil && [placemarks count] > 0) {
             placemark = [placemarks lastObject];
             
-            MKCoordinateRegion region;
-            
             NSDictionary *addressDictionary =
             placemark.addressDictionary;
 
@@ -103,17 +127,17 @@
                ||
                [state isEqualToString:@"New Jersey"])
             {
-                region.center = self.mapView.userLocation.coordinate;
+                currentUserRegion.center = self.mapView.userLocation.coordinate;
             }
             else
             {
-                region.center.latitude = 40.7142;
-                region.center.longitude = -74.0064;
+                currentUserRegion.center.latitude = 40.7142;
+                currentUserRegion.center.longitude = -74.0064;
             }
             
-            region.span.latitudeDelta = .05;
-            region.span.longitudeDelta = .05;
-            [self.mapView setRegion:region animated:YES];
+            currentUserRegion.span.latitudeDelta = .002;
+            currentUserRegion.span.longitudeDelta = .002;
+            [self.mapView setRegion:currentUserRegion animated:YES];
             
             [self queryData];
             
@@ -125,9 +149,89 @@
 }
 
 - (IBAction)getCurrentLocation:(id)sender {
+    
+    //show activity indicator
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;    
     [locationManager startUpdatingLocation];
+}
+
+#pragma UITableView delegate
+-(int)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return wifiSpots.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"WifiCell";
+    WifiCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil){
+        
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:CellIdentifier owner:nil options:nil];
+        
+        for(id currentObject in topLevelObjects)
+        {
+            if([currentObject isKindOfClass:[WifiCell class]])
+            {
+                cell = (WifiCell *)currentObject;
+                break;
+            }
+        }
+    }
+    
+    SODAMapAnnotation *annotation = (SODAMapAnnotation *)[wifiSpots objectAtIndex:indexPath.row];
+    
+    SODAWifi *wifi = [wifiDict objectForKey:annotation.annotationId];
+    
+    cell.name.text = wifi.name;
+    cell.address.text = [NSString stringWithFormat:@"%@ %@ %@", wifi.address, wifi.city, wifi.zip];
+    cell.url.text = wifi.url;
+    NSString *imageName = [wifi.type isEqualToString:@"Free"]?@"free.png":@"cost.png";
+    [cell.typeImg setImage:[UIImage imageNamed:imageName]];
+    cell.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    cell.clipsToBounds = YES;
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    SODAMapAnnotation *annotation = (SODAMapAnnotation *)[wifiSpots objectAtIndex:indexPath.row];
+    
+    if(self.selectedRow && indexPath.row == self.selectedRow.row)
+    {
+        self.selectedRow = nil;
+        [self.mapView deselectAnnotation:annotation animated:YES];
+    }
+    else
+    {
+        self.selectedRow = indexPath;
+        [self.mapView selectAnnotation:annotation animated:YES];
+
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [tableView beginUpdates];
+    [tableView endUpdates];
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(self.selectedRow && indexPath.row == self.selectedRow.row) {
+        return 100;
+    }
+    return 32;
 }
 
 #pragma mark - MKMapViewDelegate Methods
@@ -136,10 +240,16 @@
     return [self viewForAnnotation:annotation];
 }
 
+- (void)populateDetailTableFromVisibleAnnotations:(MKMapView *)mapView {
+    MKMapRect visibleMapRect = mapView.visibleMapRect;
+    NSSet *visibleAnnotations = [mapView annotationsInMapRect:visibleMapRect];
+    wifiSpots = [visibleAnnotations allObjects];
+    [self.tableView reloadData];
+}
+
 - (void)mapView:(MKMapView *)mapView regionWillChangeAnimated:(BOOL)animated {
     
-    // The map has moved, fetch new data
-    [self queryData];
+    [self populateDetailTableFromVisibleAnnotations:mapView];
     
 }
 
@@ -149,6 +259,8 @@
     
     // Make sure the consumer is initialized
     assert(self.consumer != nil);
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     // Get the bounds of the mapview
     CGPoint nePoint = CGPointMake(self.mapView.bounds.origin.x + self.mapView.bounds.size.width, self.mapView.bounds.origin.y);
@@ -170,13 +282,20 @@
         // Check for errors
         if(response.error) {
             
-            // TODO: How should we alert the user of errors? or should we provide a way for the caller to handle them?
+            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
             
         } else {
             // Get the data from the response and create annotations for each one
             NSArray *data = response.entity;
             for (int j = 0; j < data.count; j++) {
-                SODAMapAnnotation *annotation = [self annotationForObject:[data objectAtIndex:j]];
+                
+                //store for later and retrieve from annotation id
+                SODAWifi *wifi = [data objectAtIndex:j];
+                [wifiDict setObject:wifi forKey:wifi.id];
+                
+                SODAMapAnnotation *annotation = [self annotationForObject:wifi];
+                
+                
                 if(annotation != nil) {
                     
                     // Make sure we haven't already added this annotation to the map
@@ -196,6 +315,9 @@
             
             
         }
+        
+        [self populateDetailTableFromVisibleAnnotations:self.mapView];
+        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         
     }]];
 }
@@ -224,15 +346,12 @@
     return annotationView;
 }
 
-
-#pragma mark - "Abstract" Methods
-
 /**
  * Invoked each time the maps moves around
  */
 - (SODAQuery *)queryForMapWithGeoBox:(SODAGeoBox *)geoBox{
     
-    SODAQuery *query = [[SODAQuery alloc] initWithDataset:@"ehc4-fktp" mapping:[SODAWifi class]];
+    query = [[SODAQuery alloc] initWithDataset:@"ehc4-fktp" mapping:[SODAWifi class]];
     
     //[query where:@"zip" startsWith:@"282"];
     
@@ -245,8 +364,10 @@
 - (SODAMapAnnotation *)annotationForObject:(SODAWifi *) wifi {
     
     SODAMapAnnotation *annotation = [SODAMapAnnotation annotationWithObject:wifi atLocation:wifi.location];
+    
     annotation.title = wifi.name;
-    annotation.subtitle = [NSString stringWithFormat:@"Type: %@, Address: %@", wifi.type, wifi.address];
+    annotation.annotationId = wifi.id;
+    annotation.subtitle = [NSString stringWithFormat:@"%@ - %@", wifi.address, wifi.type];
     
     return annotation;
 }

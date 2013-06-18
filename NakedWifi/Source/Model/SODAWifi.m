@@ -30,6 +30,7 @@
 @synthesize location = _location;
 @synthesize url = _url;
 @synthesize type = _type;
+@synthesize id = _id;
 
 #pragma mark - SODAPropertyMapping custom mappings impl
 
@@ -39,7 +40,14 @@
  */
 - (NSDictionary *)propertyMappings {
     return @{
-             @"shape" : @"location"
+             @"id" : @"id",
+             @"shape" : @"location",
+             @"name" : @"name",
+             @"address" : @"address",
+             @"city" : @"city",
+             @"zip" : @"zip",
+             @"url" : @"url",
+             @"type" : @"type"
              };
 }
 

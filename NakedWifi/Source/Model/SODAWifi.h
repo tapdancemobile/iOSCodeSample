@@ -20,6 +20,7 @@
  */
 @interface SODAWifi : NSObject<SODAPropertyMapping> {
     
+    NSString *_id;
     NSString *_phone;
     NSString *_zip;
     NSString *_address;
@@ -32,6 +33,7 @@
 
 #pragma mark - Properties
 
+@property(nonatomic, copy) NSString *id;
 @property(nonatomic, copy) NSString *phone;
 @property(nonatomic, copy) NSString *zip;
 @property(nonatomic, copy) NSString *address;

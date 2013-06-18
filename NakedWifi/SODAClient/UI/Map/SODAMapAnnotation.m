@@ -25,6 +25,7 @@
 @synthesize coordinate = _coordinate;
 @synthesize location = _location;
 @synthesize object = _object;
+@synthesize annotationId = _annotationId;
 
 #pragma mark - Initializers
 

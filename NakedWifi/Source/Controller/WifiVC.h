@@ -23,6 +23,7 @@
 
 @interface WifiVC : UIViewController<MKMapViewDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
+@property (strong, nonatomic) NSIndexPath *selectedRow;
 @property (strong, nonatomic) MKMapView *mapView;
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) SODAConsumer *consumer;

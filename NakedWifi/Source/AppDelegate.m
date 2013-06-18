@@ -29,7 +29,7 @@
     WifiVC *wifiVC = [[WifiVC alloc] init];
     
     UINavigationController *wifiNavigationController = [[UINavigationController alloc] initWithRootViewController:wifiVC];
-    wifiNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"WIFI" image:[UIImage imageNamed:@"179-notepad"] tag:0];
+    wifiNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Local Wifi" image:[UIImage imageNamed:@"wifi.png"] tag:0];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[wifiNavigationController];
